@@ -7,11 +7,9 @@ matrix:
         compiler: clang
         script:
             - g++ hello.cpp  
-        
         language: python
         script:
             - python hello.py
-       
        language: ruby
         rvm:
             - 2.5
