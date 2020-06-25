@@ -3,14 +3,14 @@ matrix:
     dist: bionic
     arch: arm64-graviton2
     include:
-        language: cpp
+        - language: cpp
         compiler: clang
         script:
             - g++ hello.cpp  
-        language: python
+        - language: python
         script:
             - python hello.py
-       language: ruby
+       - language: ruby
         rvm:
             - 2.5
         script:
