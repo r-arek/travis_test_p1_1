@@ -2,16 +2,17 @@ matrix:
     os: linux
     dist: bionic
     arch: arm64-graviton2
+    
     include:
         - language: cpp
-        compiler: clang
-        script:
+          compiler: clang
+          script:
             - g++ hello.cpp  
         - language: python
-        script:
+          script:
             - python hello.py
-       - language: ruby
-        rvm:
+        - language: ruby
+          rvm:
             - 2.5
-        script:
+          script:
             - ruby hello.rb
