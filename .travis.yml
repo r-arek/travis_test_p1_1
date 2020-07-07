@@ -1,9 +1,10 @@
-matrix:
-    os: linux
-    dist: bionic
-    arch: arm64-graviton2
-    
-    include:
+os: linux
+dist: focal
+arch: arm64-graviton2
+group: dev
+
+jobs:
+  include:
         - language: cpp
           compiler: clang
           script:
